@@ -12,7 +12,7 @@ export default {
     assetModuleFilename: '[name][ext]',
   },
   entry: './src/main.js',
-  mode: 'development',
+  mode: 'production',
   devtool: 'inline-source-map',
   module: {
     rules: [
