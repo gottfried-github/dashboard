@@ -21,13 +21,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Build
+      - name: Build static files
         run: |
           npm install
           npm run build
 
       - name: Upload static files as artifact
-        id: deployment
+        id: upload
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
           path: dist/
@@ -37,7 +37,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
 
     needs: build
 
