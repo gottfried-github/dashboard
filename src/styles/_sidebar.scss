@@ -6,13 +6,14 @@
   width: 100vw;
 
   overflow-y: scroll;
-
   z-index: 10;
+
+  grid-template-rows: 74px 1fr;
 
   background-color: aqua;
 
   @media (min-width: $breakpoint) {
-    display: block;
+    display: grid;
     position: relative;
 
     width: 100%;
@@ -20,7 +21,22 @@
 }
 
 .container_sidebar_visible .sidebar {
-  display: block;
+  display: grid;
+}
+
+.sidebar__header {
+  position: fixed;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px;
+
+  // z-index: 20;
+  background-color: red;
+
+  @media (min-width: $breakpoint) {
+    width: $sidebar-width;
+  }
 }
 
 .sidebar__close-button {
@@ -30,8 +46,21 @@
 }
 
 .sidebar__nav {
+  grid-row: 2;
+
+  height: 400px;
+  margin-top: 40px;
+
+  background-color: green;
+
   @media (min-width: $breakpoint) {
-    background-color: green;
-    height: 600px;
   }
+}
+
+.sidebar__footer {
+  grid-row: 3;
+
+  padding: 25px;
+  
+  background-color: red;
 }
