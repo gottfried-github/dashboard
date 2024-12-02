@@ -1,6 +1,60 @@
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
   
   font-family: 'Poppins';
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  color: $black;
+}
+
+.container {
+  @media (min-width: $breakpoint) {
+    display: grid;
+    grid-template-columns: $sidebar-width 1fr;
+  }
+}
+
+.container_sidebar_visible {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+
+  position: fixed;
+  box-sizing: border-box;
+  width: 100vw;
+
+  padding: 36px 28px;
+
+  background-color: $white;
+
+  @media (min-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.button {
+  padding: 11px;
+
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    background-color: $purple;
+    border-radius: 8px;
+    color: white;
+  }
 }

@@ -1,0 +1,25 @@
+.content {
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  padding-top: 74px; // header height
+
+  background-color: $light-blue;
+
+  @media (min-width: $breakpoint) {
+    height: 100vh;
+
+    padding-top: 0;
+
+    overflow-y: scroll;
+  }
+}
+
+.content__customers {
+  height: 400px;
+
+  padding: 25px;
+
+  background-color: green;
+  background-clip: content-box;
+}
