@@ -87,14 +87,66 @@
 
 .sidebar__nav {
   grid-row: 2;
+  display: flex;
+  flex-direction: column;
 
-  height: 400px;
-  margin-top: 40px;
-
-  background-color: green;
+  row-gap: 18px;
+  margin-top: 53px;
 
   @media (min-width: $breakpoint) {
   }
+}
+
+.sidebar__button {
+  display: flex;
+  align-items: center;
+
+  column-gap: 14px;
+  padding: 11px 8px 11px 11px;
+
+  color: $pastel-purple;
+
+  &:hover {
+    background-color: $purple;
+    border-radius: 8px;
+    color: $white;
+
+    .sidebar__arrow {
+      stroke: $white;
+    }
+
+    .svg__fill {
+      fill: $white;
+    }
+    
+    .svg__stroke {
+      stroke: $white;
+    }
+  }
+}
+
+.sidebar__icon {
+  width: 24px;
+  height: 24px;
+
+  .svg__fill {
+    fill: $pastel-purple;
+  }
+  
+  .svg__stroke {
+    stroke: $pastel-purple;
+  }
+}
+
+.sidebar__button-title {
+  flex-grow: 1;
+}
+
+.sidebar__arrow {
+  width: 16px;
+  height: 16px;
+
+  stroke: $pastel-purple;
 }
 
 .sidebar__footer {
