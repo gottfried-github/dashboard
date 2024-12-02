@@ -1,4 +1,6 @@
 .content {
+  display: flex;
+
   box-sizing: border-box;
   min-height: 100vh;
 
@@ -15,11 +17,11 @@
   }
 }
 
-.content__customers {
-  height: 400px;
-
-  padding: 25px;
-
-  background-color: green;
-  background-clip: content-box;
+.content__content {
+  width: 100%;
+  
+  @media (min-width: calc($sidebar-width + 900px + 26px * 2)) {
+    width: unset;
+    margin: 0 auto;
+  }
 }
