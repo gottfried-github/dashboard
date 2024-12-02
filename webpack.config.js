@@ -8,10 +8,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export default {
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    filename: '[name].js',
+    filename: 'index.js',
     assetModuleFilename: '[name][ext]',
   },
-  entry: './src/main.js',
+  entry: './src/index.js',
   mode: 'production',
   devtool: 'inline-source-map',
   module: {
@@ -46,7 +46,7 @@ export default {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: '[name].css',
+      filename: 'index.css',
       // chunkFilename: "[id].css",
     }),
   ],

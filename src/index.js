@@ -1,4 +1,4 @@
 import './index.html'
-import './main.scss'
+import './index.scss'
 
 console.log('Hello world!')
