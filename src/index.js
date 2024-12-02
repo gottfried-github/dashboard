@@ -1,5 +1,5 @@
 import './index.html'
-import './index.scss'
+import './styles/index.scss'
 
 const SIDEBAR_VISIBILITY_CLASS = 'container_sidebar_visible'
 
