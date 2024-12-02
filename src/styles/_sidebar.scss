@@ -1,0 +1,37 @@
+.sidebar {
+  display: none;
+  position: fixed;
+
+  height: 100vh;
+  width: 100vw;
+
+  overflow-y: scroll;
+
+  z-index: 10;
+
+  background-color: aqua;
+
+  @media (min-width: $breakpoint) {
+    display: block;
+    position: relative;
+
+    width: 100%;
+  }
+}
+
+.container_sidebar_visible .sidebar {
+  display: block;
+}
+
+.sidebar__close-button {
+  @media (min-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.sidebar__nav {
+  @media (min-width: $breakpoint) {
+    background-color: green;
+    height: 600px;
+  }
+}

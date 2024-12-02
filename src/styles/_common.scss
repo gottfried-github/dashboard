@@ -4,3 +4,28 @@ body {
   
   font-family: 'Poppins';
 }
+
+.container {
+  @media (min-width: $breakpoint) {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+.container_sidebar_visible {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+
+  padding: 25px;
+
+  background-color: green;
+
+  @media (min-width: $breakpoint) {
+    display: none;
+  }
+}
