@@ -1,6 +1,15 @@
+$breakpoint: 1000px;
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  @media (min-width: $breakpoint) {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+  }
 }
 
 .container_sidebar_visible {
@@ -20,6 +29,26 @@ body {
   z-index: 10;
 
   background-color: aqua;
+
+  @media (min-width: $breakpoint) {
+    display: block;
+    position: relative;
+
+    width: 100%;
+  }
+}
+
+.sidebar__close-button {
+  @media (min-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.sidebar__nav {
+  @media (min-width: $breakpoint) {
+    background-color: green;
+    height: 600px;
+  }
 }
 
 .header {
@@ -29,6 +58,10 @@ body {
   padding: 25px;
 
   background-color: green;
+
+  @media (min-width: $breakpoint) {
+    display: none;
+  }
 }
 
 .container_sidebar_visible .sidebar {
@@ -42,6 +75,14 @@ body {
   padding-top: 74px; // header height
 
   background-color: grey;
+
+  @media (min-width: $breakpoint) {
+    height: 100vh;
+
+    padding-top: 0;
+
+    overflow-y: scroll;
+  }
 }
 
 .content__customers {
@@ -51,39 +92,4 @@ body {
 
   background-color: green;
   background-clip: content-box;
-}
-
-@media (min-width: 1000px) {
-  .container {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .sidebar {
-    display: block;
-    position: relative;
-
-    width: 100%;
-  }
-
-  .sidebar__close-button {
-    display: none;
-  }
-
-  .sidebar__nav {
-    background-color: green;
-    height: 600px;
-  }
-
-  .content {
-    height: 100vh;
-
-    padding-top: 0;
-
-    overflow-y: scroll;
-  }
 }
