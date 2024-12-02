@@ -26,14 +26,35 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: flex-end;
+
   position: fixed;
+  box-sizing: border-box;
   width: 100vw;
 
-  padding: 25px;
+  padding: 36px 28px;
 
-  background-color: green;
+  background-color: $white;
 
   @media (min-width: $breakpoint) {
     display: none;
+  }
+}
+
+.button {
+  padding: 11px;
+
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    background-color: $purple;
+    border-radius: 8px;
+    color: white;
   }
 }
