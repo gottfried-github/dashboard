@@ -1,14 +1,22 @@
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
   
   font-family: 'Poppins';
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  color: $black;
 }
 
 .container {
   @media (min-width: $breakpoint) {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: $sidebar-width 1fr;
   }
 }
 
