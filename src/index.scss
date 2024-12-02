@@ -1,3 +1,26 @@
 body {
-  background-color: green;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  display: none;
+}
+
+.container_sidebar_visible .sidebar {
+  display: block;
+}
+
+@media (min-width: 450px) {
+  .sidebar {
+    display: block;
+
+    .sidebar__close-button {
+      display: none;
+    }
+  }
+
+  .header {
+    display: none;
+  }
 }
