@@ -1,9 +1,20 @@
 // colors
+$light-black: #292D32;
 $black: #000000;
 $white: #FFFFFF;
 $light-blue: #FAFBFF;
 $purple: #5932EA;
 $pastel-purple: #9197B3;
+$green: #16C098;
+$green-alpha: rgba(22, 192, 152, 0.38);
+$dark-green: #00B087;
+$darker-green: #008767;
+$light-red: #FFC5C5;
+$red: #DF0404;
+$lighter-grey: #F5F5F5;
+$light-grey: #EEEEEE;
+$medium-grey: #B5B7C0;
+$dark-grey: #404B52;
 
 // breakpoints
 $breakpoint: 1000px;
@@ -13,3 +24,6 @@ $sidebar-width: 306px;
 
 // sidebar
 $sidebar-padding: 28px;
+
+// customers
+$customers-padding: 28px;
