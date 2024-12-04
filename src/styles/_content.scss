@@ -18,10 +18,23 @@
 }
 
 .content__content {
+  display: flex;
+  flex-direction: column;
+
   width: 100%;
+
+  row-gap: 50px;
+  padding-top: 40px;
   
   @media (min-width: calc($sidebar-width + 900px + 26px * 2)) {
     width: unset;
     margin: 0 auto;
   }
+}
+
+.content__title {
+  margin: 0;
+
+  font-size: 2.4rem;
+  font-weight: inherit;
 }

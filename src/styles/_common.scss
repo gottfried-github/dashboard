@@ -58,3 +58,35 @@ body {
     color: white;
   }
 }
+
+.search-field {
+  display: flex;
+  align-items: center;
+
+  column-gap: 4px;
+  padding: 0 8px;
+
+  width: 216px;
+  height: 38px;
+
+  background-color: $light-blue;
+  border-radius: 10px;
+}
+
+.search-field__icon {
+  width: 24px;
+  height: 24px;
+
+  background-image: url('../assets/images/icon_search.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search-field__input {
+  flex-grow: 1;
+  
+  padding: 0;
+
+  background: transparent;
+  border: none;
+}
