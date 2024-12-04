@@ -1,5 +1,5 @@
 # Watch it live
-Whatch it live [here](https://gottfried-github.github.io/dashboard/).
+Watch it live [here](https://gottfried-github.github.io/dashboard/).
 
 # Development
 Watch:
