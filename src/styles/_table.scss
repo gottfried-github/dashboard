@@ -5,41 +5,48 @@
   width: calc(150px * 6 + 26px * 2);
 }
 
-.table__header, .table__body {
+.table-header, .table-body {
   display: block;
   padding: 0 26px;
 }
 
-.table__header {
+.table-header {
   text-align: left;
   border-bottom: 1px solid black;
 }
 
-.table__body {
-  .table__row {
-    border-bottom: 1px solid black;
-  }
+.table-body__row {
+  border-bottom: 1px solid black;
 }
 
-.table__heading_name, .table__cell_name {
-  width: 150px;
-}
-.table__heading_company, .table__cell_company {
-  width: 150px;
+.table-header__cell {
+  padding: 16px 0;
 }
 
-.table__heading_phone, .table__cell_phone {
-  width: 150px;
+.table-body__cell {
+  padding: 26px 0;
 }
 
-.table__heading_email, .table__cell_email {
+.table-header_name, .table-body_name {
   width: 150px;
 }
 
-.table__heading_country, .table__cell_country {
+.table-header_company, .table-body_company {
   width: 150px;
 }
 
-.table__heading_status, .table__cell_status {
+.table-header_phone, .table-body_phone {
+  width: 150px;
+}
+
+.table-header_email, .table-body_email {
+  width: 150px;
+}
+
+.table-header_country, .table-body_country {
+  width: 150px;
+}
+
+.table-header_status, .table-body_status {
   width: 150px;
 }
