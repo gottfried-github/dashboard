@@ -1,8 +1,11 @@
 .content {
+  display: flex;
+
   box-sizing: border-box;
   min-height: 100vh;
 
-  padding-top: 74px; // header height
+  // 115px = header height
+  padding: 115px $customers-padding 0 $customers-padding;
 
   background-color: $light-blue;
 
@@ -15,11 +18,25 @@
   }
 }
 
-.content__customers {
-  height: 400px;
+.content__content {
+  display: flex;
+  flex-direction: column;
 
-  padding: 25px;
+  width: 100%;
+  height: max-content;
 
-  background-color: green;
-  background-clip: content-box;
+  row-gap: 50px;
+  padding: 40px 0;
+  
+  @media (min-width: calc($sidebar-width + 900px + 26px * 2)) {
+    width: unset;
+    margin: 0 auto;
+  }
+}
+
+.content__title {
+  margin: 0;
+
+  font-size: 2.4rem;
+  font-weight: inherit;
 }
