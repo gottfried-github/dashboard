@@ -2,51 +2,86 @@
   table-layout: fixed;
   border-collapse: collapse;
 
-  width: calc(150px * 6 + 26px * 2);
+  width: calc(886px + $customers-padding * 2);
+  
+  font-size: 1.4rem;
 }
 
 .table-header, .table-body {
   display: block;
-  padding: 0 26px;
+  padding: 0 $customers-padding;
 }
 
 .table-header {
   text-align: left;
-  border-bottom: 1px solid black;
+  color: $medium-grey;
+  border-bottom: 1px solid $light-grey;
+}
+
+.table-body {
+  color: $light-black;
 }
 
 .table-body__row {
-  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid $light-grey;
 }
 
 .table-header__cell {
-  padding: 16px 0;
+  padding: 14px 0;
 }
 
 .table-body__cell {
-  padding: 26px 0;
+  // padding: 26px 0;
 }
 
-.table-header_name, .table-body_name {
-  width: 150px;
+.table-header__cell_name, .table-body__cell_name {
+  width: 172px;
 }
 
-.table-header_company, .table-body_company {
-  width: 150px;
+.table-header__cell_company, .table-body__cell_company {
+  width: 130px;
 }
 
-.table-header_phone, .table-body_phone {
-  width: 150px;
+.table-header__cell_phone, .table-body__cell_phone {
+  width: 156px;
 }
 
-.table-header_email, .table-body_email {
-  width: 150px;
+.table-header__cell_email, .table-body__cell_email {
+  width: 208px;
 }
 
-.table-header_country, .table-body_country {
-  width: 150px;
+.table-header__cell_country, .table-body__cell_country {
+  width: 140px;
 }
 
-.table-header_status, .table-body_status {
-  width: 150px;
+.table-header__cell_status, .table-body__cell_status {
+  width: 80px;
+}
+
+.table-body__status {
+  box-sizing: border-box;
+  width: 80px;
+
+  padding: 4px 0;
+
+  text-align: center;
+}
+
+.table-body__status_active {
+  color: $darker-green;
+  background-color: $green-alpha;
+  border: 1px solid $dark-green;
+  border-radius: 4px;
+}
+
+.table-body__status_inactive {
+  color: $red;
+  background-color: $light-red;
+  border: 1px solid $red;
+  border-radius: 4px;
 }

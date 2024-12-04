@@ -4,7 +4,8 @@
   box-sizing: border-box;
   min-height: 100vh;
 
-  padding-top: 74px; // header height
+  // 115px = header height
+  padding: 115px $customers-padding 0 $customers-padding;
 
   background-color: $light-blue;
 
@@ -22,9 +23,10 @@
   flex-direction: column;
 
   width: 100%;
+  height: max-content;
 
   row-gap: 50px;
-  padding-top: 40px;
+  padding: 40px 0;
   
   @media (min-width: calc($sidebar-width + 900px + 26px * 2)) {
     width: unset;

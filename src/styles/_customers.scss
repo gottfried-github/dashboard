@@ -8,10 +8,16 @@
 
 .customers__header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 
-  padding: 0 28px 26px 28px;
+  row-gap: 26px;
+  padding: 0 $customers-padding 26px $customers-padding;
+
+  @media (min-width: 556px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .customers__title-block {
@@ -38,4 +44,25 @@
 
 .customers__scroller {
   overflow-x: scroll;
+}
+
+.customers__footer {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 18px;
+  padding: 30px $customers-padding 0 $customers-padding;
+
+  @media (min-width: 726px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.customers__summary {
+  margin: 0;
+
+  font-size: 1.4rem;
+  color: $medium-grey;
 }
